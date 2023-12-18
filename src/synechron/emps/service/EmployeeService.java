@@ -1,9 +1,15 @@
 package synechron.emps.service;
 
+import synechron.emps.repo.EmployeeRepository;
+
 public class EmployeeService {
     //implement the singleton DP
     // 1. write the private constructor
     //use the private constructor to create the private objects within the class only
+
+    private EmployeeRepository employeeRepository = EmployeeRepository.getInstance();
+    //gte the singleton empRepo object
+
     private EmployeeService(){
         // TODO Auto generated constructor stub
     }
